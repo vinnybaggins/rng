@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Roleta de números</h1>
+        <div id="chooseNmb" class="">
+            <header id="chooseInterval">
+                <div id="limitsContainer">
+                    Sortear
+                    <input type="text" id="howManyNmb" class="limits" maxlength="8" value="1">
+                    <span id="numero_s">número(s)</span> de
+                    <br>
+                    <input type="text" name="floor" id="floor"
+                    class="limits" placeholder="valor mínimo" maxlength="8" value="1">
+                    até
+                    <input type="text" name="ceil" id="ceil"
+                    class="limits" placeholder="valor máximo" maxlength="8" value="100">
+                </div>
+                
+                <label for="hideNmb">
+                    <input type="checkbox" name="hideNmb" id="hideNmb">
+                    Mostrar números apenas após clicados
+                </label>
+                
+                <label for="sortNmb">
+                    <input type="checkbox" name="sortNmb" id="sortNmb">
+                    Mostrar resultados em ordem crescente
+                </label>
+                
+                <label for="showCountdown">
+                    <input type="checkbox" name="showCountdown" id="showCountdown">
+                    Mostrar contagem regressiva
+                </label>
+                
+                <button id="drawBtn" class="changeBtns blockCenter">Sortear</button>
+            </header>
+        </div>
+        <div id="countdown" class="hide"></div>
+        <div id="showNmb" class="hide">
+            <header id="displaySection">
+                <div id="numberDisplay" class="blockCenter"></div>
+            </header>
+            <section class="">
+                <!--<p>Números já exibidos:</p>
+                <table id="drawnNumbers" class="blockCenter"></table> -->
+                <button id="returnBtn" class="changeBtns blockCenter">Voltar</button>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
